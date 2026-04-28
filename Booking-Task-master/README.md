@@ -1,5 +1,5 @@
 # Booking Landing Page
-# Live https://mostafa-talaat98.github.io/Booking-Task/
+# Live [https://github.com/wesamosama96/Booking-Task/edit/main/Booking-Task-master/README.md]
 A clean, modern, and fully responsive booking landing page for hotels, resorts, or travel destinations. Built to capture user interest and highlight special deals, popular locations, and booking options. This project demonstrates professional UI/UX using modern front-end technologies.
 
 🚀 Project Overview
@@ -45,7 +45,7 @@ booking-landing-page/
 Clone the repository
 
 bash
-git clone https://github.com/Mostafa-Talaat98/mtlt278.git
+git clone https://github.com/wesamosama96/Booking-Task/edit/main/Booking-Task-master/README.md
 cd booking-landing-page
 Install dependencies
 
