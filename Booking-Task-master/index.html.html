@@ -1,0 +1,254 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Booking Website
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <div class="text-2xl font-bold">
+     Booking
+    </div>
+    <nav class="space-x-4">
+     <a class="hover:underline" href="#">
+      Home
+     </a>
+     <a class="hover:underline" href="#">
+      Destinations
+     </a>
+     <a class="hover:underline" href="#">
+      Deals
+     </a>
+     <a class="hover:underline" href="#">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative">
+   <img alt="A beautiful scenic view of a travel destination with mountains and a lake" class="w-full h-96 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/HUS9VTwC6MY2OV2UnrdgxpUtz54wbgGVSZbJhLfM1d2odNEKA.jpg" width="1920"/>
+   <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="text-center text-white">
+     <h1 class="text-4xl font-bold mb-4">
+      Find Your Next Adventure
+     </h1>
+     <p class="text-lg mb-6">
+      Discover amazing places at exclusive deals
+     </p>
+     <button class="bg-blue-600 px-6 py-2 rounded-full text-lg">
+      Explore Now
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Search Section -->
+  <section class="container mx-auto p-6 bg-white shadow-md rounded-lg -mt-16 relative z-10">
+   <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div>
+     <label class="block text-sm font-medium text-gray-700" for="destination">
+      Destination
+     </label>
+     <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" id="destination" placeholder="Where are you going?" type="text"/>
+    </div>
+    <div>
+     <label class="block text-sm font-medium text-gray-700" for="checkin">
+      Check-in
+     </label>
+     <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" id="checkin" type="date"/>
+    </div>
+    <div>
+     <label class="block text-sm font-medium text-gray-700" for="checkout">
+      Check-out
+     </label>
+     <input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" id="checkout" type="date"/>
+    </div>
+    <div class="flex items-end">
+     <button class="bg-blue-600 text-white px-6 py-2 rounded-md w-full">
+      Search
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Popular Destinations -->
+  <section class="container mx-auto p-6">
+   <h2 class="text-2xl font-bold mb-4">
+    Popular Destinations
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="Aerial view of New York City with skyscrapers" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/jvUgIaNDPopSIZ2b9WgtCOQ1bQ5DuezQUhdLMoevee9CtrhQB.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       New York
+      </h3>
+      <p class="text-gray-600">
+       The city that never sleeps.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="Eiffel Tower in Paris during sunset" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/CCLvnYiMxDKoI94p9GXsgJuoCYhjSN24BtmpE5OFtsIzuGCF.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Paris
+      </h3>
+      <p class="text-gray-600">
+       The city of lights and love.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="Beautiful beach in Bali with clear blue water" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/1XPWF6seHV0uC64YuTzfYE8Yq9mU51Nkfd7rrNaxWpPl21QoA.jpg" width="400"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold">
+       Bali
+      </h3>
+      <p class="text-gray-600">
+       A tropical paradise.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Deals Section -->
+  <section class="bg-blue-600 text-white p-6">
+   <div class="container mx-auto">
+    <h2 class="text-2xl font-bold mb-4">
+     Exclusive Deals
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+     <div class="bg-white text-black shadow-md rounded-lg overflow-hidden">
+      <img alt="Luxury hotel room with a king-size bed" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/d9JgdtPHGPKjEh8lYfEpg623WM6jRkNMDJ47VXsUcSOrdNEKA.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold">
+        Luxury Hotel
+       </h3>
+       <p class="text-gray-600">
+        Save 20% on your stay.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white text-black shadow-md rounded-lg overflow-hidden">
+      <img alt="Scenic view of a mountain resort" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/gkVRKugjVSIyNpObR4LcHJn6hpcffTpZW1rGKWgbjtfp21QoA.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold">
+        Mountain Resort
+       </h3>
+       <p class="text-gray-600">
+        Get 15% off on bookings.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white text-black shadow-md rounded-lg overflow-hidden">
+      <img alt="Beachside resort with palm trees" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/O44jU47ZYwKQEdewSmbQlP4FPYhTwvN49YCKmsBi0wQndNEKA.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold">
+        Beachside Resort
+       </h3>
+       <p class="text-gray-600">
+        Enjoy 10% discount.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-6">
+   <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div>
+     <h3 class="text-xl font-bold mb-2">
+      Booking
+     </h3>
+     <p class="text-gray-400">
+      Your trusted travel partner.
+     </p>
+    </div>
+    <div>
+     <h3 class="text-xl font-bold mb-2">
+      Company
+     </h3>
+     <ul class="space-y-2">
+      <li>
+       <a class="hover:underline" href="#">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Careers
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Press
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-bold mb-2">
+      Support
+     </h3>
+     <ul class="space-y-2">
+      <li>
+       <a class="hover:underline" href="#">
+        Contact Us
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        FAQs
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Help Center
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-xl font-bold mb-2">
+      Follow Us
+     </h3>
+     <div class="flex space-x-4">
+      <a class="hover:text-gray-400" href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a class="hover:text-gray-400" href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a class="hover:text-gray-400" href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a class="hover:text-gray-400" href="#">
+       <i class="fab fa-linkedin-in">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="text-center text-gray-400 mt-6">
+    © 2023 Booking. All rights reserved.
+   </div>
+  </footer>
+ </body>
+</html>
